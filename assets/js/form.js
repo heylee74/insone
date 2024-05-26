@@ -66,7 +66,7 @@ document.querySelector('.form').addEventListener('submit', async function (e) {
   }
 
   const { data, error } = await sb
-    .from('festival')
+    .from('test')
     .insert([{ name, phone, company, festival, inquiry }])
     .select();
 
